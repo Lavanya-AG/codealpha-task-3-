@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <div class="music-info">
+            <h4 id="title">Song Title</h4>
+            <p id="artist">Artist Name</p>
+        </div>
+        <audio id="audio"></audio>
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="progress-ball"></div>
+        </div>
+        <div class="time">
+            <span id="current-time">0:00</span>  <span id="duration">0:00</span>
+        </div>
+        <div class="controls">
+            <button id="prev">PREV</button>
+            <button id="play">PLAY</button>
+            <button id="next">NEXT</button>
+        </div>
+    </div>
+    <div class="playlist">
+        <ul id="playlist">
+            <li data-index="0">Believer-Imagine Dragons</li>
+            <li data-index="1">Unstoppable - Sia </li>
+            <li data-index="2">Life goes on- BTS</li>
+            <li data-index="3">Lover - Taylor Swift</li>
+
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

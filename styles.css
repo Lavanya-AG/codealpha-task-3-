@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 40;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-image:url("j.png");
+    background-size: cover;
+    background-color: rgb(7, 7, 7);
+}
+
+.player {
+    background-color:steelblue;
+    background-image: url("b.jpg");
+    background-size: cover;
+    margin-top: 60px;
+    padding: 25px;
+    border-radius: 70px;
+    box-shadow:whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+    width:80%;
+
+}
+
+.music-info h4 {
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.music-info p {
+    margin: 5px 0 20px;
+    color:steelblue
+}
+
+.progress-container {
+    position: relative;
+    align-items: center;
+    background: black;
+    height: 8px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+    cursor: pointer;
+
+}
+
+.progress {
+    background: #007bff;
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s;
+}
+
+.progress-ball {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #007bff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color:black;
+}
+
+.controls button {
+    background-color:rgb(7, 7, 7);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.controls button i {
+    font-size: 1.3em;
+}
+
+.controls button:hover {
+    background-color:red;
+}
+
+.playlist {
+    background-image: url("j.png");
+    background-size: cover;
+    
+    padding: 10px;
+    border-style:groove;
+    border-width: 5px;
+    box-shadow: 0 5px 15px rgba(214, 98, 98, 0.1);
+    width: 40%;
+
+}
+
+.playlist ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist li {
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.playlist li:hover {
+    background-color:lightgrey;
+}
+
+.playlist li.active {
+    background-color:linen;
+    color: rgb(10, 10, 10);
+}
